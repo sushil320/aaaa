@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ip-app-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: ipapp
+  template:
+    metadata:
+      labels:
+        app: ipapp
+    spec:
+      containers:
+        - name: ip_app
+          image: harshajain/ip-app:1
+          ports:
+            - containerPort: 80
