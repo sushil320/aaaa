@@ -10,4 +10,4 @@ spec:
     image: harshajain/ip-app:1
        
     ports:
-      - containerPort: <Port>11
+      - containerPort: <Port>13
