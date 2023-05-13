@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ip-app-deployment
+  labels:
+    name: myapp
+spec:
+  containers:
+  - name: myapp
+    image: harshajain/ip-app:1
+       
+    ports:
+      - containerPort: <Port>11
