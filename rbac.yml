@@ -10,4 +10,3 @@ metadata:
   annotations:
     kubernetes.io/service-account.name: k8s-sa
 type: kubernetes.io/service-account-token  
-//hi  
